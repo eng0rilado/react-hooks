@@ -20,8 +20,8 @@ export const useForm = (initialForm = {}) => {
     }
 
     return {
-            ...formState,
-            formState,
+            ...formState, //Cada elemento del objeto
+            formState, //El objeto al completo
             onResetForm,
             onInputChange};
 }

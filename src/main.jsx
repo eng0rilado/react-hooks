@@ -1,11 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import { CallbackHook } from './06-memos/CallbackHook.jsx'
-import { Padre } from './07-tarea-memo/Padre.jsx'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+// import './08-useReducer/intro-reducer.js';
+import { TodoApp } from './08-useReducer/TodoApp.jsx';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Padre />
-  </StrictMode>,
+//   <StrictMode>
+    <TodoApp />
+//   </StrictMode>,
 )
