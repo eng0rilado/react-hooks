@@ -1,11 +1,12 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-// import './08-useReducer/intro-reducer.js';
-import { TodoApp } from './08-useReducer/TodoApp.jsx';
+import { RouterProvider } from 'react-router-dom'
+import { router } from './09-useContext/Routes.jsx';
+
 
 createRoot(document.getElementById('root')).render(
-//   <StrictMode>
-    <TodoApp />
-//   </StrictMode>,
+    //   <StrictMode>
+    <RouterProvider router={ router } />
+    //   </StrictMode>,
 )
